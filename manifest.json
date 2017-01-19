@@ -1,0 +1,20 @@
+{
+  "name": "jira-time-tracker",
+  "description": "This extension track you time reporting on jira worklog",
+  "version": "1.0",
+  "background": {
+    "scripts": ["moment/moment.min.js", "background.js"]
+  },
+  "options_page": "views/options.html",
+  "browser_action": {
+    "default_title": "test"
+  },
+  "manifest_version": 2,
+  "permissions": [
+	"webNavigation",
+	//"webRequestBlocking",
+	"storage",
+	"notifications",
+	"http://jira.accelaero.cloud/*"
+  ]
+}
